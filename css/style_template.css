@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+    /* Removing default margins for the body */
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+} 
+
+/* Nav Styles */
+nav {
+    /* style nav to make it look different - 2 properties */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; /* Slightly larger for emphasis */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+    font-weight: bold;
+}
+
+nav p, nav a {}
+
+nav a {}
+
+nav a:hover {}
+
+/* Footer Styles */
+footer {
+    background-color: lightblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #333;
+    font-size: 14px;
+}
+
+footer a {}
+
+footer a:hover {}
+
+/* Splash Section */
+.splash {
+    text-align: center;
+    background-color: #C4E1F6; 
+    padding: 80px 30px; 
+}
+
+
+.splash h1 {
+    font-size: 42px; 
+    color: #1a5276;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+
+.splash .headshot {
+    width: 230px; 
+    height: auto;
+    border: 5px solid #1a5276; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); 
+    margin-bottom: 15px;
+}
+
+.splash .address {
+    font-size: 18px;
+    color: #222; 
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.splash .tagline {
+    font-size: 20px; 
+    color: #444;
+    font-style: italic;
+    max-width: 750px;
+    margin: 12px auto;
+    line-height: 1.8; 
+}
+
+/* Horizontal Rule - More Elegant */
+hr {
+    border: 0;
+    height: 6px;
+    background: linear-gradient(to right, #FF9D3D, #FFBD73, #FEEE91); 
+    margin: 40px 0;
+    border-radius: 6px;
+    border-top: 3px solid #FFBD73; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sections */
+section {}
+
+/* Section Headings */
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: #FF9D3D; /* Bold Orange */
+    text-transform: uppercase;
+    text-align: center; /* This ensures the text is centered */
+    padding: 15px 0;
+    border-bottom: 3px solid #FFBD73; /* Peach Orange underline */
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center; /* Centers the list */
+    align-items: center; 
+    text-align: center;
+    width: 100%;
+}
+
+
+.education-text {
+    font-style: italic;  /* Makes the text italic */
+    color: #4a4a4a;      /* Slightly dark gray for readability */
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+
+/* link styles */
+a {
+    color: #444;  /* Dark gray color for better readability */
+    font-weight: 600; /* Slightly bolder text for visibility */
+    text-decoration: none;  /* Remove underline initially */
+}
+a:hover {
+    text-decoration: underline; /* Show underline on hover */
+    color: #1a5276;  /* Dark blue color on hover */
+    background-color: #f0f0f0;  /* Light gray background on hover */
+    padding: 2px 5px;  /* Adds a slight padding effect */
+    border-radius: 5px; /* Rounds corners slightly for a softer look */
+}
+
+p {
+    font-size: 16px;
+}
+
+/* List Styles */
+
+/* Unordered List Styles */
+ul {
+    list-style: none; 
+    padding: 0;
+    margin-left: 20px; 
+}
+
+ul li {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+ul li::before {
+    content: "🔹"; 
+    color: #FF9D3D; 
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    row-gap: 10px;
+    column-gap: 15px;
+    padding: 10px;
+    align-items: center;
+}
+
+dl dt {
+    font-weight: bold;
+    color: #1a5276; /* Dark Blue */
+    text-align: right;
+}
+
+dl dd {
+    margin-left: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+
+/* Project Section */
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+
+.card {
+    background-color: white;  
+    border-radius: 10px;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;  
+    text-align: center; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); 
+}
+.card img {
+    width: 100%;  
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+}
+
+.card h3 {}
+
+/* Contact Page Styles */
+.one-col {
+    max-width: 500px;  
+    margin: 30px auto; 
+    text-align: center; 
+}
+
+.one-col form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.one-col input, 
+.one-col textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #FFBD73; /* Soft orange border */
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+.one-col button {
+    padding: 10px;
+    background-color: #FF9D3D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.one-col button:hover {
+    background-color: #FFBD73;
+}
+
+.one-col input:focus, 
+.one-col textarea:focus {
+    border-color: #FF9D3D; 
+    background-color: #FFF7E6; 
+}
+
+
